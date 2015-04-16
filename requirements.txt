@@ -2,3 +2,4 @@ Flask
 Flask-Restless
 Flask-SQLAlchemy
 PyMySQL
+requests

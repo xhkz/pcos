@@ -5,6 +5,7 @@ db = SQLAlchemy()
 
 
 class Clinician(db.Model):
+    __tablename__ = 'clinician'
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
     user_id = db.Column(db.BIGINT, db.ForeignKey('securityuser.id'), unique=True, nullable=False)
     first_name = db.Column(db.VARCHAR, nullable=False)
@@ -12,6 +13,7 @@ class Clinician(db.Model):
 
 
 class ClinicalReview(db.Model):
+    __tablename__ = 'clinical_review'
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
     doa = db.Column(db.DATETIME)
     eh_body = db.Column(db.VARCHAR)
@@ -59,31 +61,176 @@ class ClinicalReview(db.Model):
 
 
 class Investigation(db.Model):
-    pass
+    __tablename__ = 'investigation'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    doa = db.Column(db.DATETIME)
+    consent_uob = db.Column(db.SMALLINT)
+    consent_pcos_db = db.Column(db.SMALLINT)
+    urine24h = db.Column(db.SMALLINT)
+    ultrasound_pelvis_performed = db.Column(db.SMALLINT)
+    pco_appearance = db.Column(db.VARCHAR)
+    right_ovarian = db.Column(db.INT)
+    left_ovarian = db.Column(db.INT)
+    max_diameter = db.Column(db.INT)
+    blood_form_visit = db.Column(db.SMALLINT)
+    dheas = db.Column(db.DECIMAL)
+    androstenedione = db.Column(db.DECIMAL)
+    testosterone = db.Column(db.DECIMAL)
+    shbg = db.Column(db.DECIMAL)
+    ohp = db.Column(db.DECIMAL)
+    oestradiol = db.Column(db.DECIMAL)
+    lh = db.Column(db.DECIMAL)
+    fsh = db.Column(db.DECIMAL)
+    prolactin = db.Column(db.DECIMAL)
+    tsh = db.Column(db.DECIMAL)
+    ast = db.Column(db.DECIMAL)
+    alt = db.Column(db.DECIMAL)
+    alp = db.Column(db.DECIMAL)
+    albumin = db.Column(db.DECIMAL)
+    na = db.Column(db.DECIMAL)
+    k = db.Column(db.DECIMAL)
+    urea = db.Column(db.DECIMAL)
+    creatinine = db.Column(db.DECIMAL)
+    hba1c = db.Column(db.DECIMAL)
+    cholesterol = db.Column(db.DECIMAL)
+    hdl_cholesterol = db.Column(db.DECIMAL)
+    triglycerides = db.Column(db.DECIMAL)
+    wbc_cou = db.Column(db.INT)
+    rbc_cou = db.Column(db.INT)
+    haemoglob = db.Column(db.INT)
+    haematocr = db.Column(db.INT)
+    ser = db.Column(db.INT)
+    heparin_plas = db.Column(db.INT)
+    ed = db.Column(db.INT)
+    urine24h_samp = db.Column(db.INT)
+    volume2 = db.Column(db.INT)
+    patient_id = db.Column(db.BIGINT, db.ForeignKey('patient.id'), nullable=False)
 
 
 class MedicalHistory(db.Model):
-    pass
+    __tablename__ = 'medical_history'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    diagnosed_operated_date = db.Column(db.DATETIME)
+    diagnosis_surgery = db.Column(db.VARCHAR)
+    clinical_review_id = db.Column(db.BIGINT, db.ForeignKey('clinicalreview.id'), nullable=False)
 
 
 class MedicationRecord(db.Model):
-    pass
+    __tablename__ = 'medication_record'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    commenced_date = db.Column(db.DATETIME)
+    dose = db.Column(db.VARCHAR)
+    frequency = db.Column(db.VARCHAR)
+    medication = db.Column(db.VARCHAR)
+    clinical_review_id = db.Column(db.BIGINT, db.ForeignKey('clinicalreview.id'), nullable=False)
 
 
 class Observation(db.Model):
-    pass
+    __tablename__ = 'observation'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    doa = db.Column(db.DATETIME)
+    p_ba_peripheral_fat = db.Column(db.DECIMAL)
+    p_ba_peripheral_lean = db.Column(db.DECIMAL)
+    p_ba_tot_body_water = db.Column(db.DECIMAL)
+    p_ba_tot_fat = db.Column(db.DECIMAL)
+    p_ba_tot_lean = db.Column(db.DECIMAL)
+    p_ba_trunk_fat = db.Column(db.DECIMAL)
+    p_ba_trunk_lean = db.Column(db.DECIMAL)
+    p_bmi = db.Column(db.DECIMAL)
+    p_bp1st_db = db.Column(db.INT)
+    p_bp1st_sb = db.Column(db.INT)
+    p_bp2nd_db = db.Column(db.INT)
+    p_bp2nd_sb = db.Column(db.INT)
+    p_height = db.Column(db.DECIMAL)
+    p_wght = db.Column(db.DECIMAL)
+    patient_id = db.Column(db.BIGINT, db.ForeignKey('patient.id'), nullable=False)
 
 
 class Patient(db.Model):
-    pass
+    __tablename__ = 'patient'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    first_name = db.Column(db.VARCHAR, nullable=False)
+    last_name = db.Column(db.VARCHAR, nullable=False)
+    email = db.Column(db.VARCHAR, nullable=False)
+    date_of_birth = db.Column(db.DATETIME, nullable=False)
+    user_id = db.Column(db.BIGINT, db.ForeignKey('securityuser.id'), nullable=False)
+    clinician_id = db.Column(db.BIGINT, db.ForeignKey('clinician.id'), nullable=False)
 
 
 class PregnancyHistory(db.Model):
-    pass
+    __tablename__ = 'pregnancy_history'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    birth_weight = db.Column(db.INT)
+    conceive_time = db.Column(db.INT)
+    current_partner = db.Column(db.SMALLINT)
+    delivery_mode = db.Column(db.VARCHAR)
+    fetal_heart_seen = db.Column(db.SMALLINT)
+    gestational_age = db.Column(db.INT)
+    gestational_diabetes = db.Column(db.SMALLINT)
+    outcome = db.Column(db.VARCHAR)
+    pre_eclamptic_toxaemia = db.Column(db.SMALLINT)
+    pregnancy_induced_htn = db.Column(db.SMALLINT)
+    year = db.Column(db.INT)
+    clinical_review_id = db.Column(db.BIGINT, db.ForeignKey('clinicalreview.id'), nullable=False)
 
 
 class Questionnaire(db.Model):
-    pass
+    __tablename__ = 'questionnaire'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    bh_arms_pos = db.Column(db.VARCHAR)
+    bh_breast_pos = db.Column(db.VARCHAR)
+    bh_chin_pos = db.Column(db.VARCHAR)
+    bh_escu_pos = db.Column(db.VARCHAR)
+    bh_lowerback_pos = db.Column(db.VARCHAR)
+    bh_pubic_pos = db.Column(db.VARCHAR)
+    bh_unwant = db.Column(db.SMALLINT)
+    bh_unwant_start_age = db.Column(db.INT)
+    bh_upperback_pos = db.Column(db.VARCHAR)
+    bh_upperleg_pos = db.Column(db.VARCHAR)
+    bh_upperlip_pos = db.Column(db.VARCHAR)
+    diet_after_diner_snack = db.Column(db.VARCHAR)
+    diet_breakfast_daily = db.Column(db.SMALLINT)
+    diet_late_dinner = db.Column(db.SMALLINT)
+    diet_three_meals_daily = db.Column(db.SMALLINT)
+    date_submitted = db.Column(db.DATETIME)
+    exercise_ma_days_pw = db.Column(db.INT)
+    exercise_ma_mins_pd = db.Column(db.INT)
+    exercise_sitting_hrs_pd = db.Column(db.INT)
+    exercise_va_days_pw = db.Column(db.INT)
+    exercise_va_mins_pd = db.Column(db.INT)
+    exercise_walking_days_pw = db.Column(db.INT)
+    exercise_walking_mins_pd = db.Column(db.INT)
+    mc_absent_date = db.Column(db.DATETIME)
+    mc_age = db.Column(db.INT)
+    mc_irregular_start_age = db.Column(db.INT)
+    mc_irregular_year_bleeds = db.Column(db.INT)
+    mc_present_status = db.Column(db.VARCHAR)
+    mc_regular_days = db.Column(db.INT)
+    pmh_alcohol = db.Column(db.SMALLINT)
+    pmh_alcohol_week_taken = db.Column(db.INT)
+    pmh_bc_diagonsed_age = db.Column(db.INT)
+    pmh_blood_clot = db.Column(db.SMALLINT)
+    pmh_diabetes = db.Column(db.SMALLINT)
+    pmh_diabetes_diagonosed_age = db.Column(db.INT)
+    pmh_earlier_first_pubic_hair = db.Column(db.SMALLINT)
+    pmh_hbp_diagonosed_age = db.Column(db.INT)
+    pmh_hc_diagonosed_age = db.Column(db.INT)
+    pmh_hd_diagonosed_age = db.Column(db.INT)
+    pmh_heart_disease = db.Column(db.SMALLINT)
+    pmh_high_blood_pressure = db.Column(db.SMALLINT)
+    pmh_high_cholesterol = db.Column(db.SMALLINT)
+    pmh_smoke_day_taken = db.Column(db.INT)
+    pmh_smoke_status = db.Column(db.VARCHAR)
+    pmh_smoke_years = db.Column(db.INT)
+    pmh_underactive_thyroid = db.Column(db.SMALLINT)
+    pmh_ut_diagnosed_age = db.Column(db.INT)
+    skin_acne = db.Column(db.SMALLINT)
+    skin_acne_start_age = db.Column(db.INT)
+    sleep_snore = db.Column(db.VARCHAR)
+    weight_over = db.Column(db.SMALLINT)
+    weight_overyear = db.Column(db.INT)
+    ethnicity = db.Column(db.VARCHAR)
+    patient_id = db.Column(db.BIGINT, db.ForeignKey('patient.id'), nullable=False)
 
 
 class SecurityUser(db.Model):
