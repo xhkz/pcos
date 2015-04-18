@@ -1,4 +1,5 @@
 __author__ = 'Xin Huang'
+from flask.ext.login import UserMixin
 from flask.ext.sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -233,9 +234,12 @@ class Questionnaire(db.Model):
     patient_id = db.Column(db.BIGINT, db.ForeignKey('patient.id'), nullable=False)
 
 
-class SecurityUser(db.Model):
+class SecurityUser(db.Model, UserMixin):
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
     email = db.Column(db.VARCHAR, unique=True, nullable=False)
     password = db.Column(db.VARCHAR, nullable=False)
     name = db.Column(db.VARCHAR, nullable=False)
     role = db.Column(db.VARCHAR)
+
+    def __str__(self):
+        return 'email: %s, name: %s' % (self.email, self.name)

@@ -1,16 +1,19 @@
 __author__ = 'Xin Huang'
-from flask import Flask
-from flask.ext.restless import APIManager
+from flask import Flask, request, jsonify
 
+from flask.ext.restless import APIManager
+from flask.ext.login import login_user
+
+from pcos.auth import check_auth, login_manager
 from pcos.model import *
 
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 db.init_app(app)
+login_manager.init_app(app)
 
 with app.test_request_context():
-    from pcos.auth import check_auth
     pre_dict = {'POST': [check_auth],
                 'GET_SINGLE': [check_auth],
                 'GET_MANY': [check_auth],
@@ -29,3 +32,16 @@ with app.test_request_context():
     manager.create_api(PregnancyHistory, methods=['GET', 'POST', 'DELETE'])
     manager.create_api(Questionnaire, methods=['GET', 'POST', 'DELETE'])
     manager.create_api(SecurityUser, methods=['GET', 'POST', 'DELETE'])
+
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    email = data['email']
+    matches = SecurityUser.query.filter_by(email=email).all()
+    if len(matches) > 0:
+        user = matches[0]
+        login_user(user)
+        return jsonify({"result": "success", "name": user.name})
+
+    return jsonify({"result": "fail"})
