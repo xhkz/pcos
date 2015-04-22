@@ -1,6 +1,5 @@
 __author__ = 'Xin Huang'
 from flask.ext.restless import ProcessingException
-
 from flask.ext.login import LoginManager, current_user
 
 from pcos.model import SecurityUser
@@ -15,6 +14,5 @@ def load_user(userid):
 
 
 def check_auth(**kw):
-    print current_user
     if not current_user.is_authenticated():
         raise ProcessingException(description='Not Authorized', code=401)
