@@ -8,7 +8,7 @@ db = SQLAlchemy()
 class Clinician(db.Model):
     __tablename__ = 'clinician'
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
-    user_id = db.Column(db.BIGINT, db.ForeignKey('securityuser.id'), unique=True, nullable=False)
+    user_id = db.Column(db.BIGINT, db.ForeignKey('security_user.id'), unique=True, nullable=False)
     first_name = db.Column(db.VARCHAR, nullable=False)
     last_name = db.Column(db.VARCHAR, nullable=False)
 
@@ -235,6 +235,7 @@ class Questionnaire(db.Model):
 
 
 class SecurityUser(db.Model, UserMixin):
+    __tablename__ = 'security_user'
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
     email = db.Column(db.VARCHAR, unique=True, nullable=False)
     password = db.Column(db.VARCHAR, nullable=False)
