@@ -1,6 +1,0 @@
-Flask
-Flask-Login
-Flask-Restless
-Flask-SQLAlchemy
-PyMySQL
-requests
