@@ -13,9 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.initializeDb(false)
         return true
     }
 
@@ -40,7 +39,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func initializeDb(force:Bool) -> Bool {
+        let documentPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        let dbFilePath = documentPath.stringByAppendingString(Config.dbFile)
+        let filemanager = NSFileManager.defaultManager()
+        
+        if (!filemanager.fileExistsAtPath(dbFilePath) || force) {
+            let initDbPath = NSBundle.mainBundle().resourcePath?.stringByAppendingString(Config.dbFile)
+            
+            if (initDbPath == nil) {
+                return false
+            } else {
+                var error: NSError?
+                if force { filemanager.removeItemAtPath(dbFilePath, error: &error) }
+                let copySuccessful = filemanager.copyItemAtPath(initDbPath!, toPath:dbFilePath, error: &error)
+                if !copySuccessful {
+                    NSLog("init db failed: \(error?.localizedDescription)")
+                    return false
+                }
+            }
+        }
+        return true
+    }
 }
 

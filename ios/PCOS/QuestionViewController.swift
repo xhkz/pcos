@@ -196,4 +196,24 @@ class QuestionViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return ethnicities[row]
     }
+    
+    @IBAction func saveLocally(sender: AnyObject) {
+        let mcAge: Int? = mcAgeText.text.toInt()
+        var bleedStatus: String = ""
+        if let select = mcRadio.selectedButton() {
+            bleedStatus = select.currentTitle!
+        }
+        
+        let mcRegular: Int? = mcRegularText.text.toInt()
+        let mcIrregularBleeds: Int? = mcIrregularBleedsText.text.toInt()
+        let mcIrregularStart: Int? = mcIrregularStartText.text.toInt()
+        let mcAbsentYear: Int? = mcAbsentYearText.text.toInt()
+        let mcAbsentMonth: Int? = mcAbsentMonthText.text.toInt()
+    }
 }
+
+
+
+
+
+

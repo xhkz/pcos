@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>403C48AC-C1BE-4B6A-A332-379244D1B48D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PCOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</key>
+		<string>https://github.com/pOOOOOr/pcos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/PCOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pOOOOOr/pcos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pcos</string>
+		</dict>
+	</array>
+</dict>
+</plist>

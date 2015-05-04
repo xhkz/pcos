@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4638A98B1AF6C1D800F65880 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638A98A1AF6C1D800F65880 /* Util.swift */; };
+		4638A98D1AF6CEF400F65880 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638A98C1AF6CEF400F65880 /* ListViewController.swift */; };
 		465766C11AEE9C3600BE9208 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */; };
-		4672200A1AEE95FA00E7F523 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467220091AEE95FA00E7F523 /* ListViewController.swift */; };
+		467E57621AF670E900CD819E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E57611AF670E900CD819E /* libsqlite3.dylib */; };
+		467E57661AF677C800CD819E /* pcos.db in Resources */ = {isa = PBXBuildFile; fileRef = 467E57651AF677C800CD819E /* pcos.db */; };
+		467E57681AF67AA000CD819E /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E57671AF67AA000CD819E /* SwiftData.swift */; };
 		46913D881AE654340091FD49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D871AE654340091FD49 /* AppDelegate.swift */; };
 		46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D891AE654340091FD49 /* QuestionViewController.swift */; };
 		46913D8C1AE654340091FD49 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D8B1AE654340091FD49 /* UserViewController.swift */; };
@@ -33,16 +37,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4638A9871AF67E6B00F65880 /* PCOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PCOSTests.xctest; path = "/Users/pOOQOOr/Documents/pcos/ios/build/Debug-iphoneos/PCOSTests.xctest"; sourceTree = "<absolute>"; };
+		4638A98A1AF6C1D800F65880 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		4638A98C1AF6CEF400F65880 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
-		467220091AEE95FA00E7F523 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		46913D821AE654340091FD49 /* PCOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		467E57611AF670E900CD819E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		467E57651AF677C800CD819E /* pcos.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = pcos.db; path = PCOS/pcos.db; sourceTree = "<group>"; };
+		467E57671AF67AA000CD819E /* SwiftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftData.swift; sourceTree = "<group>"; };
+		467E576A1AF67BF000CD819E /* PCOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		467E576B1AF67DAC00CD819E /* PCOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PCOS.app; path = "/Users/pOOQOOr/Documents/pcos/ios/build/Debug-iphoneos/PCOS.app"; sourceTree = "<absolute>"; };
 		46913D861AE654340091FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46913D871AE654340091FD49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46913D891AE654340091FD49 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		46913D8B1AE654340091FD49 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		46913D8E1AE654340091FD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46913D931AE654340091FD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		46913D991AE654340091FD49 /* PCOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46913D9E1AE654340091FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46913D9F1AE654340091FD49 /* PCOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCOSTests.swift; sourceTree = "<group>"; };
 		46A22AF51AF568BC00DFFFCA /* hair_growth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair_growth.png; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467E57621AF670E900CD819E /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,38 +80,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467E57691AF67AF800CD819E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				467E576A1AF67BF000CD819E /* PCOS-Bridging-Header.h */,
+				467E57671AF67AA000CD819E /* SwiftData.swift */,
+				46AB05471AF55B8500DCCF5D /* Alamofire.swift */,
+				46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */,
+				465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		46913D791AE654340091FD49 = {
 			isa = PBXGroup;
 			children = (
+				467E57651AF677C800CD819E /* pcos.db */,
+				467E57611AF670E900CD819E /* libsqlite3.dylib */,
 				46913D841AE654340091FD49 /* PCOS */,
 				46913D9C1AE654340091FD49 /* PCOSTests */,
-				46913D831AE654340091FD49 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		46913D831AE654340091FD49 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				46913D821AE654340091FD49 /* PCOS.app */,
-				46913D991AE654340091FD49 /* PCOSTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		46913D841AE654340091FD49 /* PCOS */ = {
 			isa = PBXGroup;
 			children = (
 				46A22AF51AF568BC00DFFFCA /* hair_growth.png */,
-				46AB05471AF55B8500DCCF5D /* Alamofire.swift */,
-				46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */,
-				465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */,
 				46913D871AE654340091FD49 /* AppDelegate.swift */,
 				46AB05411AF54EA800DCCF5D /* Config.swift */,
-				467220091AEE95FA00E7F523 /* ListViewController.swift */,
+				4638A98C1AF6CEF400F65880 /* ListViewController.swift */,
 				46913D891AE654340091FD49 /* QuestionViewController.swift */,
 				46913D8B1AE654340091FD49 /* UserViewController.swift */,
+				4638A98A1AF6C1D800F65880 /* Util.swift */,
 				46ABF4D11AE677620053855A /* Images.xcassets */,
 				46913D921AE654340091FD49 /* LaunchScreen.xib */,
+				467E57691AF67AF800CD819E /* Libs */,
 				46913D8D1AE654340091FD49 /* Main.storyboard */,
 				46913D851AE654340091FD49 /* Supporting Files */,
 			);
@@ -150,7 +163,7 @@
 			);
 			name = PCOS;
 			productName = PCOS;
-			productReference = 46913D821AE654340091FD49 /* PCOS.app */;
+			productReference = 467E576B1AF67DAC00CD819E /* PCOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46913D981AE654340091FD49 /* PCOSTests */ = {
@@ -168,7 +181,7 @@
 			);
 			name = PCOSTests;
 			productName = PCOSTests;
-			productReference = 46913D991AE654340091FD49 /* PCOSTests.xctest */;
+			productReference = 4638A9871AF67E6B00F65880 /* PCOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +211,7 @@
 				Base,
 			);
 			mainGroup = 46913D791AE654340091FD49;
-			productRefGroup = 46913D831AE654340091FD49 /* Products */;
+			productRefGroup = 46913D791AE654340091FD49;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -214,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A22AF61AF568BC00DFFFCA /* hair_growth.png in Resources */,
+				467E57661AF677C800CD819E /* pcos.db in Resources */,
 				46ABF4D21AE677620053855A /* Images.xcassets in Resources */,
 				46913D8F1AE654340091FD49 /* Main.storyboard in Resources */,
 				46913D941AE654340091FD49 /* LaunchScreen.xib in Resources */,
@@ -236,11 +250,13 @@
 			files = (
 				46913D8C1AE654340091FD49 /* UserViewController.swift in Sources */,
 				46913D881AE654340091FD49 /* AppDelegate.swift in Sources */,
+				4638A98B1AF6C1D800F65880 /* Util.swift in Sources */,
 				46AB05421AF54EA800DCCF5D /* Config.swift in Sources */,
 				46AB054A1AF55B8500DCCF5D /* SwiftyJSON.swift in Sources */,
-				4672200A1AEE95FA00E7F523 /* ListViewController.swift in Sources */,
 				46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */,
 				465766C11AEE9C3600BE9208 /* SSRadioButtonsController.swift in Sources */,
+				467E57681AF67AA000CD819E /* SwiftData.swift in Sources */,
+				4638A98D1AF6CEF400F65880 /* ListViewController.swift in Sources */,
 				46AB05491AF55B8500DCCF5D /* Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +391,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "PCOS/PCOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -388,6 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "PCOS/PCOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

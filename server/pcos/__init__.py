@@ -19,6 +19,7 @@ with app.test_request_context():
                 'PATCH_MANY': [check_auth],
                 'DELETE_SINGLE': [check_auth],
                 'DELETE_MANY': [check_auth]}
+
     manager = APIManager(app, flask_sqlalchemy_db=db)
     manager.create_api(Clinician, methods=['GET', 'POST', 'DELETE'], preprocessors=pre_dict)
     manager.create_api(ClinicalReview, methods=['GET', 'POST', 'DELETE'])

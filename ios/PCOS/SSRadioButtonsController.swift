@@ -72,6 +72,7 @@ class SSRadioButtonsController :NSObject
                 }
             }
             sender.selected = true
+            currentSelectedButton = sender
         }
     }
     

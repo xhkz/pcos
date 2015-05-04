@@ -10,7 +10,6 @@ login_manager = LoginManager()
 
 @login_manager.user_loader
 def load_user(userid):
-    # patient login
     return SecurityUser.query.get(userid)
 
 
