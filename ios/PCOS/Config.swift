@@ -7,6 +7,9 @@
 //
 
 struct Config {
+    static let debug = true
+    static let reinit = false
+    
     static let loginUrl = "http://127.0.0.1:5000/check"
     static let dbFile = "/pcos.db"
     
@@ -15,5 +18,6 @@ struct Config {
     static let emailKey = "USER_EMAIL"
     static let dobKey = "USER_DATE_OF_BIRTH"
     static let remotePatientID = "REMOTE_PATIENT_ID"
+    static let localPatientID = "LOCAL_PATIENT_ID"
 }
 

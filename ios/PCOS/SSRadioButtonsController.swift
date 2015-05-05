@@ -80,4 +80,16 @@ class SSRadioButtonsController :NSObject
     {
         return currentSelectedButton
     }
+    
+    func setSelect(title: String) -> Bool {
+        for btn in buttonsArray
+        {
+            if btn.currentTitle! == title {
+                btn.selected = true
+                return true
+            }
+        }
+        
+        return false
+    }
 }

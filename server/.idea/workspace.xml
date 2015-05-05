@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c69f9615-8253-4fc6-ad86-e85042320827" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/pcos.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/PCOS-Bridging-Header.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcshareddata/PCOS.xccheckout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/SwiftData.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Util.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/AppIcon.appiconset/Icon-120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/AppIcon.appiconset/Icon-60@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/EditViewController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/SecurityViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/AppDelegate.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/AppDelegate.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Config.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/Config.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/AppIcon.appiconset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/LaunchScreen.xib" afterPath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/LaunchScreen.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/ListViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/ListViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/Main.storyboard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/QuestionViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/QuestionViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/SSRadioButtonsController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/SSRadioButtonsController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/UserViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/UserViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/__init__.py" afterPath="$PROJECT_DIR$/pcos/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/auth.py" afterPath="$PROJECT_DIR$/pcos/auth.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Util.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/Util.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/route.py" afterPath="$PROJECT_DIR$/pcos/route.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +33,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/server$run.coverage" NAME="run Coverage Results" MODIFIED="1430685583964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/server$run.coverage" NAME="run Coverage Results" MODIFIED="1430824811640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,53 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="route.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pcos/route.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1742835" vertical-offset="0" max-vertical-offset="1291">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pcos/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2459" max-vertical-offset="3750">
-              <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pcos/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pcos/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="5910">
-              <caret line="334" column="31" selection-start-line="334" selection-start-column="31" selection-end-line="334" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.07482305" vertical-offset="3451" max-vertical-offset="5910">
+              <caret line="235" column="40" selection-start-line="235" selection-start-column="40" selection-end-line="235" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -116,9 +75,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1263" />
+    <option name="x" value="1471" />
     <option name="y" value="23" />
-    <option name="width" value="1297" />
+    <option name="width" value="1089" />
     <option name="height" value="1362" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -441,29 +400,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1263" y="23" width="1297" height="1362" extended-state="0" />
-    <editor active="false" />
+    <frame x="1471" y="23" width="1089" height="1362" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22976099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21910538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -491,9 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -509,9 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -540,13 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049668875" vertical-offset="0" max-vertical-offset="1208">
-          <caret line="4" column="72" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-1856293957/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33248731" vertical-offset="2933" max-vertical-offset="9495">
@@ -554,45 +495,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.sql">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="5910">
-          <caret line="334" column="31" selection-start-line="334" selection-start-column="31" selection-end-line="334" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1291">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/model.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2459" max-vertical-offset="3750">
-          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1291">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pcos/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1742835" vertical-offset="0" max-vertical-offset="1291">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcos/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0929512" vertical-offset="0" max-vertical-offset="1291">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcos/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2904725" vertical-offset="0" max-vertical-offset="1291">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcos/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09389672" vertical-offset="120" max-vertical-offset="3750">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcos/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0464756" vertical-offset="0" max-vertical-offset="1291">
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07482305" vertical-offset="3451" max-vertical-offset="5910">
+          <caret line="235" column="40" selection-start-line="235" selection-start-column="40" selection-end-line="235" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

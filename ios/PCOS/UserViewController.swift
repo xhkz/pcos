@@ -30,6 +30,12 @@ class UserViewController: UIViewController, UITextFieldDelegate {
         if let lastName = self.defaults.stringForKey(Config.lastNameKey) { self.lastNameText.text = lastName }
         if let email = self.defaults.stringForKey(Config.emailKey) { self.emailText.text = email }
         if let dob = self.defaults.stringForKey(Config.dobKey) { self.dobTextField.text = dob }
+        let remoteId = self.defaults.integerForKey(Config.remotePatientID)
+        if remoteId == 0 {
+            self.resetInput()
+        } else {
+            self.disableInput()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,23 +57,6 @@ class UserViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
-
-    
-    func checkUserExists() -> Bool {
-        let firstName:String! = self.defaults.stringForKey(Config.firstNameKey)
-        let lastName:String! = self.defaults.stringForKey(Config.lastNameKey)
-        let email:String! = self.defaults.stringForKey(Config.emailKey)
-        let dob:String! = self.defaults.stringForKey(Config.dobKey)
-    
-        let (resultSet, err) = SD.executeQuery("SELECT count(*) as cnt FROM user WHERE first_name = '\(firstName)' and last_name = '\(lastName)' and email = '\(email)' and date_of_birth = '\(dob)'")
-        if err != nil {
-            return false
-        } else {
-            if resultSet[0]["cnt"]?.asInt() > 0 { return true }
-        }
-        
-        return false
-    }
     
     func saveUserLocally() -> Bool {
         let firstName:String! = self.defaults.stringForKey(Config.firstNameKey)
@@ -75,11 +64,51 @@ class UserViewController: UIViewController, UITextFieldDelegate {
         let email:String! = self.defaults.stringForKey(Config.emailKey)
         let dob:String! = self.defaults.stringForKey(Config.dobKey)
         
-        if let err = SD.executeChange("INSERT INTO user (first_name, last_name, email, date_of_birth) VALUES ('\(firstName)', '\(lastName)', '\(email)', '\(dob)')") {
+        let sql = "INSERT INTO user (first_name, last_name, email, date_of_birth) VALUES ('\(firstName)', '\(lastName)', '\(email)', '\(dob)')"
+        if Config.debug { println(sql) }
+        
+        if let err = SD.executeChange(sql) {
             return false
         } else {
             return true
         }
+    }
+    
+    func disableInput() {
+        //disable inputs
+        self.firstNameText.enabled = false
+        self.firstNameText.backgroundColor = UIColor.lightGrayColor()
+        self.lastNameText.enabled = false
+        self.lastNameText.backgroundColor = UIColor.lightGrayColor()
+        self.emailText.enabled = false
+        self.emailText.backgroundColor = UIColor.lightGrayColor()
+        self.dobTextField.enabled = false
+        self.dobTextField.backgroundColor = UIColor.lightGrayColor()
+        
+        self.loginBtn.enabled = false || Config.debug
+        self.loginBtn.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
+        
+    }
+    
+    func resetInput() {
+        self.firstNameText.text = ""
+        self.firstNameText.enabled = true
+        self.firstNameText.backgroundColor = UIColor.whiteColor()
+        
+        self.lastNameText.text = ""
+        self.lastNameText.enabled = true
+        self.lastNameText.backgroundColor = UIColor.whiteColor()
+        
+        self.emailText.text = ""
+        self.emailText.enabled = true
+        self.emailText.backgroundColor = UIColor.whiteColor()
+        
+        self.dobTextField.text = ""
+        self.dobTextField.enabled = true
+        self.dobTextField.backgroundColor = UIColor.whiteColor()
+        
+        self.loginBtn.enabled = true
+        self.loginBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
     }
 
     @IBAction func loginTouched(sender: AnyObject) {
@@ -114,53 +143,25 @@ class UserViewController: UIViewController, UITextFieldDelegate {
                         self.defaults.setObject(lastName, forKey: Config.lastNameKey)
                         self.defaults.setObject(email, forKey: Config.emailKey)
                         self.defaults.setObject(dob, forKey: Config.dobKey)
-                        self.defaults.setInteger(json["patient_id"].int!, forKey: Config.remotePatientID)
+                        self.defaults.setInteger(json["patient_id"].intValue, forKey: Config.remotePatientID)
                         
                         //save locally
-                        if (!self.checkUserExists()) {
-                            if (!self.saveUserLocally()) { return }
+                        let userId = getUserLocalId()
+                        if userId == 0 {
+                            if (!self.saveUserLocally()) {
+                                showAlert("Please relogin")
+                                clearDefaults()
+                            }
                         }
                         
-                        //disable inputs
-                        self.firstNameText.enabled = false
-                        self.firstNameText.backgroundColor = UIColor.grayColor()
-                        self.lastNameText.enabled = false
-                        self.lastNameText.backgroundColor = UIColor.grayColor()
-                        self.emailText.enabled = false
-                        self.emailText.backgroundColor = UIColor.grayColor()
-                        self.dobTextField.enabled = false
-                        self.dobTextField.backgroundColor = UIColor.grayColor()
-                        
-                        self.loginBtn.enabled = false
-                        self.loginBtn.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
+                        self.disableInput()
                     }
                 }
         }
     }
     
     @IBAction func logoutTouched(sender: AnyObject) {
-        self.firstNameText.text = ""
-        self.firstNameText.enabled = true
-        self.firstNameText.backgroundColor = UIColor.whiteColor()
-        
-        self.lastNameText.text = ""
-        self.lastNameText.enabled = true
-        self.lastNameText.backgroundColor = UIColor.whiteColor()
-        
-        self.emailText.text = ""
-        self.emailText.enabled = true
-        self.emailText.backgroundColor = UIColor.whiteColor()
-        
-        self.dobTextField.text = ""
-        self.dobTextField.enabled = true
-        self.dobTextField.backgroundColor = UIColor.whiteColor()
-        
-        self.loginBtn.enabled = true
-        self.loginBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        
-        //clear defaults
-        for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
-            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
-        }
+        self.resetInput()
+        clearDefaults()
     }
 }
