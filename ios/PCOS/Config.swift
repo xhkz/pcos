@@ -10,7 +10,9 @@ struct Config {
     static let debug = true
     static let reinit = false
     
-    static let loginUrl = "http://127.0.0.1:5000/check"
+    static let host = "http://127.0.0.1:5000"
+    static let loginUrl = host + "/check"
+    static let syncUrl = host + "/api/questionnaire"
     static let dbFile = "/pcos.db"
     
     static let firstNameKey = "USER_FIRST_NAME"

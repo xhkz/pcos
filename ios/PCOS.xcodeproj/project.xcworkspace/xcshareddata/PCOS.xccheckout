@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>403C48AC-C1BE-4B6A-A332-379244D1B48D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PCOS</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</key>
 		<string>https://github.com/pOOOOOr/pcos.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/PCOS.xcodeproj/project.xcworkspace</string>
+	<string>ios/PCOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1CA59D0D85ACF981FA80A8E8F952C7C2316C2401</key>

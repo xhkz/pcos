@@ -13,19 +13,19 @@
 		467E57621AF670E900CD819E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E57611AF670E900CD819E /* libsqlite3.dylib */; };
 		467E57661AF677C800CD819E /* pcos.db in Resources */ = {isa = PBXBuildFile; fileRef = 467E57651AF677C800CD819E /* pcos.db */; };
 		467E57681AF67AA000CD819E /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E57671AF67AA000CD819E /* SwiftData.swift */; };
+		468198641AFEF19200100DB8 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468198631AFEF19200100DB8 /* SwiftOverlays.swift */; };
 		46913D881AE654340091FD49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D871AE654340091FD49 /* AppDelegate.swift */; };
 		46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D891AE654340091FD49 /* QuestionViewController.swift */; };
 		46913D8C1AE654340091FD49 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D8B1AE654340091FD49 /* UserViewController.swift */; };
 		46913D8F1AE654340091FD49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46913D8D1AE654340091FD49 /* Main.storyboard */; };
 		46913D941AE654340091FD49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46913D921AE654340091FD49 /* LaunchScreen.xib */; };
 		46913DA01AE654340091FD49 /* PCOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D9F1AE654340091FD49 /* PCOSTests.swift */; };
-		46A22AF61AF568BC00DFFFCA /* hair_growth.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A22AF51AF568BC00DFFFCA /* hair_growth.png */; };
+		469BED361AF94854004064CE /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BED351AF94854004064CE /* EditTableViewController.swift */; };
 		46AB05421AF54EA800DCCF5D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05411AF54EA800DCCF5D /* Config.swift */; };
 		46AB05491AF55B8500DCCF5D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05471AF55B8500DCCF5D /* Alamofire.swift */; };
 		46AB054A1AF55B8500DCCF5D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */; };
 		46ABF4D21AE677620053855A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ABF4D11AE677620053855A /* Images.xcassets */; };
 		46C4EFE91AF8E2F1008E43DB /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */; };
-		46C4EFEB1AF9184B008E43DB /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4EFEA1AF9184B008E43DB /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 		467E57651AF677C800CD819E /* pcos.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = pcos.db; path = PCOS/pcos.db; sourceTree = "<group>"; };
 		467E57671AF67AA000CD819E /* SwiftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftData.swift; sourceTree = "<group>"; };
 		467E576A1AF67BF000CD819E /* PCOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		468198631AFEF19200100DB8 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOverlays.swift; sourceTree = "<group>"; };
 		46913D861AE654340091FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46913D871AE654340091FD49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46913D891AE654340091FD49 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +55,7 @@
 		46913D931AE654340091FD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46913D9E1AE654340091FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46913D9F1AE654340091FD49 /* PCOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCOSTests.swift; sourceTree = "<group>"; };
-		46A22AF51AF568BC00DFFFCA /* hair_growth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair_growth.png; sourceTree = "<group>"; };
+		469BED351AF94854004064CE /* EditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 		46AB05411AF54EA800DCCF5D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		46AB05471AF55B8500DCCF5D /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		46C4EFE61AF8C697008E43DB /* PCOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C4EFE71AF8C697008E43DB /* PCOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
-		46C4EFEA1AF9184B008E43DB /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4636BB361AFDE378009DABEB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */,
+				46913D8B1AE654340091FD49 /* UserViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		4636BB371AFDE3DB009DABEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46AB05411AF54EA800DCCF5D /* Config.swift */,
+				4638A98A1AF6C1D800F65880 /* Util.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4636BB381AFDE421009DABEB /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4636BB361AFDE378009DABEB /* Login */,
+				4638A98C1AF6CEF400F65880 /* ListViewController.swift */,
+				46913D891AE654340091FD49 /* QuestionViewController.swift */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		4636BB391AFDE439009DABEB /* EditViews */ = {
+			isa = PBXGroup;
+			children = (
+				469BED351AF94854004064CE /* EditTableViewController.swift */,
+			);
+			name = EditViews;
+			sourceTree = "<group>";
+		};
 		467E57691AF67AF800CD819E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +128,7 @@
 				46AB05471AF55B8500DCCF5D /* Alamofire.swift */,
 				46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */,
 				465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */,
+				468198631AFEF19200100DB8 /* SwiftOverlays.swift */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -111,18 +148,13 @@
 		46913D841AE654340091FD49 /* PCOS */ = {
 			isa = PBXGroup;
 			children = (
-				46A22AF51AF568BC00DFFFCA /* hair_growth.png */,
 				46913D871AE654340091FD49 /* AppDelegate.swift */,
-				46AB05411AF54EA800DCCF5D /* Config.swift */,
-				46C4EFEA1AF9184B008E43DB /* EditViewController.swift */,
-				4638A98C1AF6CEF400F65880 /* ListViewController.swift */,
-				46913D891AE654340091FD49 /* QuestionViewController.swift */,
-				46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */,
-				46913D8B1AE654340091FD49 /* UserViewController.swift */,
-				4638A98A1AF6C1D800F65880 /* Util.swift */,
+				4636BB391AFDE439009DABEB /* EditViews */,
 				46913D921AE654340091FD49 /* LaunchScreen.xib */,
 				46913D8D1AE654340091FD49 /* Main.storyboard */,
 				46913D851AE654340091FD49 /* Supporting Files */,
+				4636BB381AFDE421009DABEB /* Tabs */,
+				4636BB371AFDE3DB009DABEB /* Utils */,
 			);
 			path = PCOS;
 			sourceTree = "<group>";
@@ -234,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A22AF61AF568BC00DFFFCA /* hair_growth.png in Resources */,
 				467E57661AF677C800CD819E /* pcos.db in Resources */,
 				46ABF4D21AE677620053855A /* Images.xcassets in Resources */,
 				46913D8F1AE654340091FD49 /* Main.storyboard in Resources */,
@@ -256,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469BED361AF94854004064CE /* EditTableViewController.swift in Sources */,
 				46913D8C1AE654340091FD49 /* UserViewController.swift in Sources */,
 				46913D881AE654340091FD49 /* AppDelegate.swift in Sources */,
 				4638A98B1AF6C1D800F65880 /* Util.swift in Sources */,
@@ -264,10 +296,10 @@
 				46AB054A1AF55B8500DCCF5D /* SwiftyJSON.swift in Sources */,
 				46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */,
 				465766C11AEE9C3600BE9208 /* SSRadioButtonsController.swift in Sources */,
-				46C4EFEB1AF9184B008E43DB /* EditViewController.swift in Sources */,
 				467E57681AF67AA000CD819E /* SwiftData.swift in Sources */,
 				4638A98D1AF6CEF400F65880 /* ListViewController.swift in Sources */,
 				46AB05491AF55B8500DCCF5D /* Alamofire.swift in Sources */,
+				468198641AFEF19200100DB8 /* SwiftOverlays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

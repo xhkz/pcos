@@ -15,6 +15,10 @@ func showAlert(message:String) {
     alertView.show()
 }
 
+func printLog(log:Any) {
+    if Config.debug { println(log) }
+}
+
 extension String {
     
     subscript (i: Int) -> Character {

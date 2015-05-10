@@ -1,5 +1,4 @@
 from flask import request, jsonify
-
 from flask.ext.login import login_user
 
 from pcos import app, SecurityUser, Patient
@@ -31,6 +30,6 @@ def check():
                                       email=email,
                                       date_of_birth=date_of_birth).all()
     if len(matches) > 0:
-        return jsonify({'result': 'success', 'message': 'Found.', 'patient_id': matches[0].id})
+        return jsonify({'result': 'success', 'message': 'Success', 'patient_id': matches[0].id})
 
     return jsonify({'result': 'fail', 'message': 'No matching patient found.'})
