@@ -1,7 +1,7 @@
 from flask import request, jsonify
 from flask.ext.login import login_user
 
-from pcos import app, SecurityUser, Patient
+from pcos import app, SecurityUser, Patient, Appointment
 
 
 @app.route('/login_security', methods=['POST'])
@@ -25,11 +25,18 @@ def check():
     last_name = data['last_name']
     email = data['email']
     date_of_birth = data['dob']
-    matches = Patient.query.filter_by(first_name=first_name,
-                                      last_name=last_name,
-                                      email=email,
-                                      date_of_birth=date_of_birth).all()
-    if len(matches) > 0:
-        return jsonify({'result': 'success', 'message': 'Success', 'patient_id': matches[0].id})
+    patients = Patient.query.filter_by(first_name=first_name, last_name=last_name, email=email,
+                                       date_of_birth=date_of_birth).all()
+
+    if len(patients) > 0:
+        appointments = Appointment.query.filter_by(patient_id=patients[0].id, app_status='pending').order_by(
+            Appointment.app_time.desc()).all()
+
+        ret = {'result': 'success', 'message': 'Success', 'patient_id': patients[0].id}
+
+        if appointments:
+            ret['app'] = {'id': appointments[0].id, 'time': str(appointments[0].app_time)}
+
+        return jsonify(ret)
 
     return jsonify({'result': 'fail', 'message': 'No matching patient found.'})

@@ -380,6 +380,24 @@ CREATE TABLE `security_user` (
   DEFAULT CHARSET = utf8;
 
 
+# Dump of table appointment
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `appointment`;
+
+CREATE TABLE `appointment` (
+  `id`           BIGINT      NOT NULL AUTO_INCREMENT,
+  `patient_id`   BIGINT      NOT NULL,
+  `clinician_id` BIGINT      NOT NULL,
+  `app_time`     DATETIME    NOT NULL,
+  `app_status`   VARCHAR(30) NOT NULL DEFAULT 'pending', # pending -> accept/decline
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_appointment_patient` FOREIGN KEY (`patient_id`) REFERENCES `patient` (`id`),
+  CONSTRAINT `fk_appointment_clinician` FOREIGN KEY (`clinician_id`) REFERENCES `clinician` (`id`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+
 /*!40111 SET SQL_NOTES = @OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE = @OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS */;

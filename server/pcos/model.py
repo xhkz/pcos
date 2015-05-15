@@ -5,6 +5,15 @@ from flask.ext.sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 
+class Appointment(db.Model):
+    __tablename__ = 'appointment'
+    id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)
+    patient_id = db.Column(db.BIGINT, db.ForeignKey('patient.id'), nullable=False)
+    clinician_id = db.Column(db.BIGINT, db.ForeignKey('clinician.id'), nullable=False)
+    app_time = db.Column(db.DATETIME, nullable=False)
+    app_status = db.Column(db.VARCHAR, nullable=False, default='pending')
+
+
 class Clinician(db.Model):
     __tablename__ = 'clinician'
     id = db.Column(db.BIGINT, primary_key=True, autoincrement=True)

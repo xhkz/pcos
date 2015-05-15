@@ -2,27 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c69f9615-8253-4fc6-ad86-e85042320827" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/Synced.imageset/Synced.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/ToSync.imageset/ToSync.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/hair_growth.imageset/hair_growth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/Synced.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/ToSync.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/hair_growth.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/EditTableViewController.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/SwiftOverlays.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/PCOS/EditViewController.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/Item.imageset/first.pdf" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS/Assets/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundError.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundError@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundMessage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundSuccess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundWarning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationButtonBackground.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/NotificationButtonBackground@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Alamofire.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Download.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Private/HexColors/HexColor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Public/HexColors/HexColor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/HexColors/Classes/HexColor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/HexColors/Classes/HexColor.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/HexColors/LICENCE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftOverlays/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftyJSON/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Manager.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Manifest.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS.xcworkspace/xcshareddata/PCOS.xccheckout" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/ParameterEncoding.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Podfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Podfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire-Private.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-Alamofire/Pods-PCOS-Alamofire.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS-Alamofire.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors-Private.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-HexColors/Pods-PCOS-HexColors.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS-HexColors.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays-Private.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftOverlays/Pods-PCOS-SwiftOverlays.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS-SwiftOverlays.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON-Private.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-SwiftyJSON/Pods-PCOS-SwiftyJSON.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS-SwiftyJSON.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages-Private.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS-TSMessages/Pods-PCOS-TSMessages.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS-TSMessages.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-acknowledgements.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-acknowledgements.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-environment.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-frameworks.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-resources.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS.debug.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Target Support Files/Pods-PCOS/Pods-PCOS.release.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/Pods-PCOS.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/HexColors/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftOverlays/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftyJSON/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Request.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/ResponseSerialization.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Private/TSMessages/TSBlurView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Public/TSMessages/TSBlurView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSBlurView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSBlurView.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Private/TSMessages/TSMessage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Public/TSMessages/TSMessage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSMessage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSMessage.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Private/TSMessages/TSMessageView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Headers/Public/TSMessages/TSMessageView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSMessageView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Classes/TSMessageView.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Upload.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Alamofire/Source/Validation.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/PCOS.xcworkspace/contents.xcworkspacedata" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server_nginx.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/true" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uwsgi.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ios/Pods/Pods.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/PCOS/Alamofire.swift" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../ios/PCOS/SwiftOverlays.swift" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftOverlays/SwiftOverlays/SwiftOverlays.swift" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../ios/PCOS/SwiftyJSON.swift" afterPath="$PROJECT_DIR$/../ios/Pods/SwiftyJSON/Source/SwiftyJSON.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcuserdata/pOOQOOr.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/AppDelegate.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/AppDelegate.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/xcuserdata/pOOQOOr.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Config.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/Config.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/Item.imageset/Contents.json" afterPath="$PROJECT_DIR$/../ios/PCOS/Images.xcassets/Item.imageset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/LaunchScreen.xib" afterPath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/LaunchScreen.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/EditTableViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/EditTableViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/ListViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/ListViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../ios/PCOS/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcshareddata/PCOS.xccheckout" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.xcworkspace/xcshareddata/PCOS.xccheckout" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/PCOS-Bridging-Header.h" afterPath="$PROJECT_DIR$/../ios/PCOS/PCOS-Bridging-Header.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS/UserViewController.swift" afterPath="$PROJECT_DIR$/../ios/PCOS/UserViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/__init__.py" afterPath="$PROJECT_DIR$/pcos/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sql" afterPath="$PROJECT_DIR$/db.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/model.py" afterPath="$PROJECT_DIR$/pcos/model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../ios/PCOS.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcos/route.py" afterPath="$PROJECT_DIR$/pcos/route.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="server.iws" />
@@ -37,7 +151,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/server$run.coverage" NAME="run Coverage Results" MODIFIED="1431265257216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/server$test.coverage" NAME="test Coverage Results" MODIFIED="1431674404198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/server$run.coverage" NAME="run Coverage Results" MODIFIED="1431714880165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -59,8 +174,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pcos/auth.py" />
-        <option value="$PROJECT_DIR$/pcos/route.py" />
+        <option value="$PROJECT_DIR$/web_nginx.conf" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/uwsgi.ini" />
+        <option value="$PROJECT_DIR$/db.sql" />
+        <option value="$PROJECT_DIR$/pcos/model.py" />
         <option value="$PROJECT_DIR$/pcos/__init__.py" />
+        <option value="$PROJECT_DIR$/pcos/route.py" />
       </list>
     </option>
   </component>
@@ -68,10 +188,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="23" />
-    <option name="width" value="1319" />
-    <option name="height" value="1362" />
+    <option name="width" value="2558" />
+    <option name="height" value="1365" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -155,11 +274,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="LayoutCode.rearrangeEntriesPython" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.run">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -176,6 +301,28 @@
       <module name="server" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="server" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -370,12 +517,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.run" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.run" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +542,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1319" height="1362" extended-state="1" />
+    <frame x="0" y="23" width="2558" height="1365" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,13 +551,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21758908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27382752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35178167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10555121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -443,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -491,24 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1291">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-1856293957/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33248731" vertical-offset="2933" max-vertical-offset="9495">
           <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1291">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -519,37 +651,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0580945" vertical-offset="0" max-vertical-offset="1291">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pcos/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1278079" vertical-offset="0" max-vertical-offset="1291">
+        <state vertical-scroll-proportion="0.0927357" vertical-offset="0" max-vertical-offset="1294">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#25#75#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcos/model.py">
+    <entry file="file://$PROJECT_DIR$/true">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1975213" vertical-offset="15" max-vertical-offset="3765">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#25#62#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1294">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcos/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.080472104" vertical-offset="0" max-vertical-offset="932">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23183925" vertical-offset="3045" max-vertical-offset="8640">
+          <caret line="226" column="24" selection-start-line="226" selection-start-column="24" selection-end-line="226" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057959814" vertical-offset="0" max-vertical-offset="1294">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12751159" vertical-offset="0" max-vertical-offset="1294">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06955178" vertical-offset="0" max-vertical-offset="1294">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37231758" vertical-offset="5248" max-vertical-offset="6180">
+          <caret line="373" column="48" selection-start-line="373" selection-start-column="48" selection-end-line="373" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pcos/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1942231" vertical-offset="0" max-vertical-offset="1004">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.38626608" vertical-offset="0" max-vertical-offset="932">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -558,18 +729,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pcos/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44820717" vertical-offset="0" max-vertical-offset="1004">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41845495" vertical-offset="0" max-vertical-offset="932">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="59" />
           <folding>
             <element signature="e#25#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.sql">
+    <entry file="file://$PROJECT_DIR$/pcos/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7719475" vertical-offset="4065" max-vertical-offset="5910">
-          <caret line="322" column="66" selection-start-line="322" selection-start-column="66" selection-end-line="322" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.04828326" vertical-offset="60" max-vertical-offset="3885">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>

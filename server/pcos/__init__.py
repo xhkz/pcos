@@ -23,8 +23,9 @@ with app.test_request_context():
     manager = APIManager(app, flask_sqlalchemy_db=db)
     manager.create_api(Clinician, methods=['GET', 'POST', 'DELETE'], preprocessors=pre_dict)
     manager.create_api(Patient, methods=['GET', 'POST', 'DELETE'], preprocessors=pre_dict)
-    manager.create_api(Questionnaire, methods=['GET', 'POST', 'DELETE'])
     manager.create_api(SecurityUser, methods=['GET', 'POST', 'DELETE'], preprocessors=pre_dict)
+    manager.create_api(Questionnaire, methods=['GET', 'POST'])
+    manager.create_api(Appointment, methods=['GET', 'PATCH'])
 
     from .route import *
 
