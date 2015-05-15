@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.initializeDb(Config.reinit)
+        self.registerNotification()
+        
         return true
     }
 
@@ -31,6 +33,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+    }
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        switch (identifier!) {
+            // TODO
+            case Config.accept:
+                println("accept")
+            case Config.decline:
+                println("decline")
+            default:
+                println("Error: unexpected notification action identifier!")
+        }
+        
+        completionHandler()
     }
     
     func initializeDb(force:Bool) -> Bool {
@@ -55,6 +71,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         return true
+    }
+    
+    func registerNotification() {
+        // Actions
+        let acceptAction = UIMutableUserNotificationAction()
+        acceptAction.identifier = Config.accept
+        acceptAction.title = "Accept"
+        acceptAction.activationMode = UIUserNotificationActivationMode.Background
+        acceptAction.authenticationRequired = false
+        acceptAction.destructive = true
+        
+        let declineAction = UIMutableUserNotificationAction()
+        declineAction.identifier = Config.decline
+        declineAction.title = "Decline"
+        declineAction.activationMode = UIUserNotificationActivationMode.Background
+        declineAction.destructive = false
+        
+        // Category
+        let appCategory = UIMutableUserNotificationCategory()
+        appCategory.identifier = Config.categoryID
+        appCategory.setActions([declineAction, acceptAction], forContext: UIUserNotificationActionContext.Default)
+        appCategory.setActions([declineAction, acceptAction], forContext: UIUserNotificationActionContext.Minimal)
+        
+        let types = UIUserNotificationType.Alert
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: appCategory) as Set<NSObject>)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
     }
 }
 

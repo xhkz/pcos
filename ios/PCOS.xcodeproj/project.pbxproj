@@ -10,10 +10,10 @@
 		4638A98B1AF6C1D800F65880 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638A98A1AF6C1D800F65880 /* Util.swift */; };
 		4638A98D1AF6CEF400F65880 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4638A98C1AF6CEF400F65880 /* ListViewController.swift */; };
 		465766C11AEE9C3600BE9208 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */; };
+		466069B41B06641600359382 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 466069B31B06641600359382 /* TSMessagesDefaultDesign.json */; };
 		467E57621AF670E900CD819E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E57611AF670E900CD819E /* libsqlite3.dylib */; };
 		467E57661AF677C800CD819E /* pcos.db in Resources */ = {isa = PBXBuildFile; fileRef = 467E57651AF677C800CD819E /* pcos.db */; };
 		467E57681AF67AA000CD819E /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E57671AF67AA000CD819E /* SwiftData.swift */; };
-		468198641AFEF19200100DB8 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468198631AFEF19200100DB8 /* SwiftOverlays.swift */; };
 		46913D881AE654340091FD49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D871AE654340091FD49 /* AppDelegate.swift */; };
 		46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D891AE654340091FD49 /* QuestionViewController.swift */; };
 		46913D8C1AE654340091FD49 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D8B1AE654340091FD49 /* UserViewController.swift */; };
@@ -22,10 +22,9 @@
 		46913DA01AE654340091FD49 /* PCOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46913D9F1AE654340091FD49 /* PCOSTests.swift */; };
 		469BED361AF94854004064CE /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BED351AF94854004064CE /* EditTableViewController.swift */; };
 		46AB05421AF54EA800DCCF5D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05411AF54EA800DCCF5D /* Config.swift */; };
-		46AB05491AF55B8500DCCF5D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05471AF55B8500DCCF5D /* Alamofire.swift */; };
-		46AB054A1AF55B8500DCCF5D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */; };
 		46ABF4D21AE677620053855A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ABF4D11AE677620053855A /* Images.xcassets */; };
 		46C4EFE91AF8E2F1008E43DB /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */; };
+		C13ACD139E0935E1538A02B3 /* Pods_PCOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B075534EBF35DFAD403006DB /* Pods_PCOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AB7D164D707BEE0A7674C7 /* Pods-PCOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCOS/Pods-PCOS.release.xcconfig"; sourceTree = "<group>"; };
 		4638A98A1AF6C1D800F65880 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		4638A98C1AF6CEF400F65880 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		466069B31B06641600359382 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = TSMessagesDefaultDesign.json; path = ../Pods/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		46699B901B06532D00D5741A /* PCOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		467E57611AF670E900CD819E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		467E57651AF677C800CD819E /* pcos.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = pcos.db; path = PCOS/pcos.db; sourceTree = "<group>"; };
+		467E57651AF677C800CD819E /* pcos.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = pcos.db; sourceTree = "<group>"; };
 		467E57671AF67AA000CD819E /* SwiftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftData.swift; sourceTree = "<group>"; };
-		467E576A1AF67BF000CD819E /* PCOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		468198631AFEF19200100DB8 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOverlays.swift; sourceTree = "<group>"; };
 		46913D861AE654340091FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46913D871AE654340091FD49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46913D891AE654340091FD49 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +57,12 @@
 		46913D9F1AE654340091FD49 /* PCOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCOSTests.swift; sourceTree = "<group>"; };
 		469BED351AF94854004064CE /* EditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 		46AB05411AF54EA800DCCF5D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		46AB05471AF55B8500DCCF5D /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		46ABF4D11AE677620053855A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46C4EFE61AF8C697008E43DB /* PCOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C4EFE71AF8C697008E43DB /* PCOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C4EFE81AF8E2F1008E43DB /* SecurityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
+		92BA5A91FAC06C55D501393B /* Pods-PCOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCOS/Pods-PCOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B075534EBF35DFAD403006DB /* Pods_PCOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				467E57621AF670E900CD819E /* libsqlite3.dylib in Frameworks */,
+				C13ACD139E0935E1538A02B3 /* Pods_PCOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B606D1EEA4B4FE70D9538E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B075534EBF35DFAD403006DB /* Pods_PCOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4636BB361AFDE378009DABEB /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +129,20 @@
 			name = EditViews;
 			sourceTree = "<group>";
 		};
+		466069B51B06645B00359382 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4636BB391AFDE439009DABEB /* EditViews */,
+				4636BB381AFDE421009DABEB /* Tabs */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		467E57691AF67AF800CD819E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				467E576A1AF67BF000CD819E /* PCOS-Bridging-Header.h */,
-				467E57671AF67AA000CD819E /* SwiftData.swift */,
-				46AB05471AF55B8500DCCF5D /* Alamofire.swift */,
-				46AB05481AF55B8500DCCF5D /* SwiftyJSON.swift */,
 				465766C01AEE9C3600BE9208 /* SSRadioButtonsController.swift */,
-				468198631AFEF19200100DB8 /* SwiftOverlays.swift */,
+				467E57671AF67AA000CD819E /* SwiftData.swift */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -136,24 +150,23 @@
 		46913D791AE654340091FD49 = {
 			isa = PBXGroup;
 			children = (
-				467E57651AF677C800CD819E /* pcos.db */,
-				467E57611AF670E900CD819E /* libsqlite3.dylib */,
 				46913D841AE654340091FD49 /* PCOS */,
 				46913D9C1AE654340091FD49 /* PCOSTests */,
 				46C4EFE61AF8C697008E43DB /* PCOS.app */,
 				46C4EFE71AF8C697008E43DB /* PCOSTests.xctest */,
+				C2ED7A679A07100EECA8A484 /* Pods */,
+				1B606D1EEA4B4FE70D9538E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		46913D841AE654340091FD49 /* PCOS */ = {
 			isa = PBXGroup;
 			children = (
+				466069B51B06645B00359382 /* Views */,
 				46913D871AE654340091FD49 /* AppDelegate.swift */,
-				4636BB391AFDE439009DABEB /* EditViews */,
 				46913D921AE654340091FD49 /* LaunchScreen.xib */,
 				46913D8D1AE654340091FD49 /* Main.storyboard */,
 				46913D851AE654340091FD49 /* Supporting Files */,
-				4636BB381AFDE421009DABEB /* Tabs */,
 				4636BB371AFDE3DB009DABEB /* Utils */,
 			);
 			path = PCOS;
@@ -162,6 +175,10 @@
 		46913D851AE654340091FD49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46699B901B06532D00D5741A /* PCOS-Bridging-Header.h */,
+				467E57611AF670E900CD819E /* libsqlite3.dylib */,
+				466069B31B06641600359382 /* TSMessagesDefaultDesign.json */,
+				467E57651AF677C800CD819E /* pcos.db */,
 				46ABF4D11AE677620053855A /* Images.xcassets */,
 				467E57691AF67AF800CD819E /* Libs */,
 				46913D861AE654340091FD49 /* Info.plist */,
@@ -186,6 +203,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C2ED7A679A07100EECA8A484 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92BA5A91FAC06C55D501393B /* Pods-PCOS.debug.xcconfig */,
+				00AB7D164D707BEE0A7674C7 /* Pods-PCOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46913DA31AE654340091FD49 /* Build configuration list for PBXNativeTarget "PCOS" */;
 			buildPhases = (
+				5FBF5BECE6209BF20AE846F1 /* Check Pods Manifest.lock */,
 				46913D7E1AE654340091FD49 /* Sources */,
 				46913D7F1AE654340091FD49 /* Frameworks */,
 				46913D801AE654340091FD49 /* Resources */,
+				C7537155E31ECF5EC071E15A /* Embed Pods Frameworks */,
+				935288BF9CA4B946130A1559 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466069B41B06641600359382 /* TSMessagesDefaultDesign.json in Resources */,
 				467E57661AF677C800CD819E /* pcos.db in Resources */,
 				46ABF4D21AE677620053855A /* Images.xcassets in Resources */,
 				46913D8F1AE654340091FD49 /* Main.storyboard in Resources */,
@@ -282,6 +312,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FBF5BECE6209BF20AE846F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		935288BF9CA4B946130A1559 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7537155E31ECF5EC071E15A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PCOS/Pods-PCOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46913D7E1AE654340091FD49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,13 +371,10 @@
 				4638A98B1AF6C1D800F65880 /* Util.swift in Sources */,
 				46AB05421AF54EA800DCCF5D /* Config.swift in Sources */,
 				46C4EFE91AF8E2F1008E43DB /* SecurityViewController.swift in Sources */,
-				46AB054A1AF55B8500DCCF5D /* SwiftyJSON.swift in Sources */,
 				46913D8A1AE654340091FD49 /* QuestionViewController.swift in Sources */,
 				465766C11AEE9C3600BE9208 /* SSRadioButtonsController.swift in Sources */,
 				467E57681AF67AA000CD819E /* SwiftData.swift in Sources */,
 				4638A98D1AF6CEF400F65880 /* ListViewController.swift in Sources */,
-				46AB05491AF55B8500DCCF5D /* Alamofire.swift in Sources */,
-				468198641AFEF19200100DB8 /* SwiftOverlays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,27 +501,34 @@
 		};
 		46913DA41AE654340091FD49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BA5A91FAC06C55D501393B /* Pods-PCOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PCOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PCOS/PCOS-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "PCOS/PCOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		46913DA51AE654340091FD49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00AB7D164D707BEE0A7674C7 /* Pods-PCOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PCOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PCOS/PCOS-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "PCOS/PCOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

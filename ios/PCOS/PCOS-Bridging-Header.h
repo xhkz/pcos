@@ -10,5 +10,6 @@
 #define PCOS__Bridging_Header_h
 
 #import "sqlite3.h"
+#import "TSMessages/TSMessage.h"
 
 #endif

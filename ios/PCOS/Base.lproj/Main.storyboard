@@ -2331,7 +2331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7C-FB-0A8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="-785"/>
+            <point key="canvasLocation" x="403" y="-785"/>
         </scene>
         <!--List Navi-->
         <scene sceneID="PYS-Yx-urs">

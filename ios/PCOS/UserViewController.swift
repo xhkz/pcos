@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import TSMessages
+import AFDropdownNotification
 
 class UserViewController: UIViewController, UITextFieldDelegate {
     
@@ -135,7 +139,7 @@ class UserViewController: UIViewController, UITextFieldDelegate {
                     var json = JSON(json!)
                     let result:String = json["result"].stringValue
                     let message:String = json["message"].stringValue
-                    showAlert(message)
+                    printLog(json)
                     
                     if (result == "success") {
                         //set defaults
@@ -155,6 +159,12 @@ class UserViewController: UIViewController, UITextFieldDelegate {
                         }
                         
                         self.disableInput()
+                        
+                        if let id: Int = json["app"]["id"].int {
+                            self.showAppointment(id, appTime: json["app"]["time"].stringValue)
+                        } else {
+                            showAlert(message)
+                        }
                     }
                 }
         }
@@ -163,5 +173,51 @@ class UserViewController: UIViewController, UITextFieldDelegate {
     @IBAction func logoutTouched(sender: AnyObject) {
         self.resetInput()
         clearDefaults()
+    }
+    
+    // TODO: Specify date of appointment
+    func fireNotification(text: String) {
+        let notification = UILocalNotification()
+        notification.alertBody = text
+        notification.fireDate = NSDate()
+        notification.category = Config.categoryID
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
+    func updateAppointment(appId: Int, status: String) {
+        request(.PATCH, Config.appUrl + "/\(appId)", parameters: ["app_status": status], encoding: .JSON)
+            .response { (request, response, data, error) in
+                if (error == nil) {
+                    TSMessage.showNotificationWithTitle("Message", subtitle: "\(status) appointment successfully", type: TSMessageNotificationType.Success)
+                } else {
+                    TSMessage.showNotificationWithTitle("Error", subtitle: "\(status) appointment failed", type: TSMessageNotificationType.Error)
+                }
+        }
+    }
+
+    func showAppointment(appId: Int, appTime: String) {
+        var alertController = UIAlertController(title: "Appointment", message: appTime, preferredStyle: .Alert)
+        
+        var acceptAction = UIAlertAction(title: "Accept", style: UIAlertActionStyle.Default) {
+            UIAlertAction in
+            self.updateAppointment(appId, status: "accept")
+            self.tabBarController?.selectedIndex = 1
+        }
+        
+        var declineAction = UIAlertAction(title: "Decline", style: UIAlertActionStyle.Destructive) {
+            UIAlertAction in
+            self.updateAppointment(appId, status: "decline")
+        }
+        
+        var postAction = UIAlertAction(title: "Postpone", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+        }
+        
+        alertController.addAction(acceptAction)
+        alertController.addAction(declineAction)
+        alertController.addAction(postAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

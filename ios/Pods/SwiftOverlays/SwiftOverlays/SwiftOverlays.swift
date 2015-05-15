@@ -100,7 +100,7 @@ public class SwiftOverlays: NSObject {
         
         return showGenericOverlay(parentView, text: text, accessoryView: imageView)
     }
-    
+
     public class func showGenericOverlay(parentView: UIView, text: NSString, accessoryView: UIView) -> UIView {
         let label = labelForText(text)
         label.frame = CGRectOffset(label.frame, accessoryView.frame.size.width + Statics.padding * 2, Statics.padding)
@@ -152,7 +152,7 @@ public class SwiftOverlays: NSObject {
         containerView.backgroundColor = Statics.backgroundColor
         containerView.center = CGPointMake(parentView.bounds.size.width/2,
             parentView.bounds.size.height/2);
-        
+
         containerView.addSubview(label)
         
         parentView.addSubview(containerView)
@@ -162,7 +162,7 @@ public class SwiftOverlays: NSObject {
     
     public class func removeAllOverlaysFromView(parentView: UIView) {
         var overlay: UIView?
-        
+
         while true {
             overlay = parentView.viewWithTag(Statics.containerViewTag)
             if overlay == nil {
@@ -192,7 +192,7 @@ public class SwiftOverlays: NSObject {
     
     public class func closeAnnoyingNotificationOnTopOfStatusBar(sender: AnyObject) {
         NSObject.cancelPreviousPerformRequestsWithTarget(self)
-        
+    
         var notificationView: UIView?
         
         if sender.isKindOfClass(UITapGestureRecognizer) {

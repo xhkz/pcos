@@ -17,7 +17,6 @@ class EditTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        printLog(qId)
     }
 
     override func didReceiveMemoryWarning() {

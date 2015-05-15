@@ -13,6 +13,7 @@ struct Config {
     static let host = "http://127.0.0.1:5000"
     static let loginUrl = host + "/check"
     static let syncUrl = host + "/api/questionnaire"
+    static let appUrl = host + "/api/appointment"
     static let dbFile = "/pcos.db"
     
     static let firstNameKey = "USER_FIRST_NAME"
@@ -21,5 +22,9 @@ struct Config {
     static let dobKey = "USER_DATE_OF_BIRTH"
     static let remotePatientID = "REMOTE_PATIENT_ID"
     static let localPatientID = "LOCAL_PATIENT_ID"
+    
+    static let accept = "APP_ACCEPT"
+    static let decline = "APP_DECLINE"
+    static let categoryID = "APP_CATEGORY"
 }
 
