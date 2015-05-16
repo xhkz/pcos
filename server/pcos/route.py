@@ -40,3 +40,8 @@ def check():
         return jsonify(ret)
 
     return jsonify({'result': 'fail', 'message': 'No matching patient found.'})
+
+
+@app.route('/info', methods=['GET'])
+def info():
+    return 'PCOS'
