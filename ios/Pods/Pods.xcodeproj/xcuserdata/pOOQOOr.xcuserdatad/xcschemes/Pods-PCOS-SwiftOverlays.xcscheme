@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A859BEFBEAFDE7EDC5D531A"
+               BlueprintIdentifier = "1BEF953600EC7D329BC48345"
                BuildableName = "SwiftOverlays.framework"
                BlueprintName = "Pods-PCOS-SwiftOverlays"
                ReferencedContainer = "container:Pods.xcodeproj">
