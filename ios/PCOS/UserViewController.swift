@@ -165,6 +165,8 @@ class UserViewController: UIViewController, UITextFieldDelegate {
                         } else {
                             showAlert(message)
                         }
+                    } else {
+                        showAlert(message)
                     }
                 }
         }
