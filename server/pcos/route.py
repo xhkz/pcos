@@ -8,6 +8,7 @@ from pcos import app, SecurityUser, Patient, Appointment
 def login_security():
     data = request.get_json()
     email = data['email']
+    # password should be encrypt with bcrypt
     password = data['password']
     matches = SecurityUser.query.filter_by(email=email, password=password).all()
     if len(matches) > 0:
