@@ -181,7 +181,7 @@ class UserViewController: UIViewController, UITextFieldDelegate {
     func fireNotification(text: String) {
         let notification = UILocalNotification()
         notification.alertBody = text
-        notification.fireDate = NSDate()
+        notification.fireDate = NSDate(timeIntervalSinceNow: 20)
         notification.category = Config.categoryID
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
