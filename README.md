@@ -1,6 +1,11 @@
 # pcos
 final project comp90019
 
+# screen shots
+![shots]
+(https://raw.githubusercontent.com/xhkz/pcos/master/shots/preview.gif)
+
+# structure
 ```
 ├── ios                    # code for ios client
 │   ├── PCOS
